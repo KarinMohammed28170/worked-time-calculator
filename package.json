@@ -1,0 +1,17 @@
+{
+  "name": "worked-time-calculator",
+  "version": "0.1.0",
+  "description": "Computes total worked hours and overtime from a list of shift entries, subtracting unpaid breaks and rounding to configurable intervals.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
