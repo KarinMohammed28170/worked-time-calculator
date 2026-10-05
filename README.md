@@ -59,3 +59,10 @@ worker actually accrues.
 Half-interval values round up. A 7.5-minute overtime on a 15-minute interval is
 paid as 15 minutes. This matches the common convention; if your jurisdiction
 requires round-to-even, this library is not it.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
